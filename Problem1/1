@@ -1,0 +1,22 @@
+function likes(names) {
+  // let namesCap='';
+   if(names.length == 0){
+  console.log(`no one likes this`)
+  }
+  else{
+    for(let i=0; i<names.length; i++){
+      
+     console.log(`${names[i]} , ${names[i+1]} and ${names[i+2]} like this`)
+    }
+    // console.log(names[0],names[1])
+  }
+
+}
+
+// let names=[]                                
+// let names=["Peter"]                         
+// let names=["Jacob", "Alex"]                 
+let names=["Max", "John", "Mark"]          
+// let names=["Alex", "Jacob", "Mark", "Max"]
+
+likes(names)
