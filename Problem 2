@@ -1,1 +1,16 @@
+function duplicateCount(string){
+
+  let found=new Map();
+  let newResult=new Map()
+  for(let i=0; i<string.length; i++){
+    let str=string[i].toLowerCase();
+      if(found.has(str)){
+        newResult.set(str)
+      }
+        else found.set(str)
+  }
+        
+        return newResult.size
+
+}
 
