@@ -1,0 +1,13 @@
+function digitalRoot(n) {
+  let Nums= n=>Number(n)
+  let arr=Array.from(String(n),Nums)
+      let sum=0;
+    while(arr.length>1){
+      sum=arr.reduce((accumulator,currentValue)=> accumulator+currentValue)
+      sum=Array.from(String(sum), Number);
+      arr=sum;
+}
+    return Number(arr)
+}
+
+codewars.com/r/0Ks-CQ
