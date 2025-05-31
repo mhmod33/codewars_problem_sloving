@@ -1,0 +1,10 @@
+function count(string) {
+const obj = {};
+    for (const char of string) {
+        obj[char] = (obj[char] || 0) + 1;
+    }
+  if(Object.keys(obj).length==0) return {}
+    else return obj;
+}
+
+codewars.com/r/0Ks-CQ
