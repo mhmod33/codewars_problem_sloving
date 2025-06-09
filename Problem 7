@@ -1,13 +1,8 @@
 function arrayDiff(a, b) {
 let diff=[];
 for(let i=0; i<a.length;i++){
-    if(b.length<=1){
-      if(!b.includes(a[i])) diff.push(a[i])
-   }else{
-    if(!b.includes(a[i])){
-    diff.push(a[i])
-    }
-   }
+      if(!b.includes(a[i]))
+        diff.push(a[i]);  
  }
   return diff
 }
