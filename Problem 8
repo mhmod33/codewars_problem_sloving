@@ -1,0 +1,18 @@
+function scramble(str1, str2) {
+  const result =[];
+  
+  for(let i=0; i<str2.length; i++){
+    if([...str1].includes(str2[i])){
+     
+      result.push(str2[i])
+     
+      
+    }
+  }
+  
+  if(JSON.stringify([...str2]) === JSON.stringify(result)) return true    
+  
+  return false;
+}
+
+console.log(scramble('rkqodlw','world'));
