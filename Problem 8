@@ -1,21 +1,14 @@
 function scramble(str1, str2) {
   const result =[];
   for(let i=0; i<str2.length; i++){
-  console.log(str2.charAt(i))
-  let char=str2[i]
-    if(str1.includes(char)){
-      result.push(char)
-      str1=str1.slice(1)
+     if(str1.includes(str2[i])){
+      result.push(str2[i])
+       str1=str1.replace(str2[i],'')
+    }else{console.log('not found',str2[i])}
+  }  
+ 
 
-    }
-  }
-      // str1=str1.slice(1)
-  
-  console.log(result);
-  console.log(str2)
-
-  if(JSON.stringify([...str2].sort()) === JSON.stringify(result.sort()))         return true; 
+  if(JSON.stringify([...str2].sort()) === JSON.stringify(result.sort()))
+  return true; 
   return false;
 }
-
-console.log(scramble('scriptjavx','javascript'));
